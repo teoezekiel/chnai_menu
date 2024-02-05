@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align:center;
+    padding: 10px;
+    background-color: #dfdddd
+}
+
+/* arrow trigger start from here */
+.slide-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: fixed;
+    left: -326px;
+    top: 30%;
+    animation: boxStartAni 1s ease-in-out;
+}
+
+.slide-box-switch{
+    border:3px solid rgb(206, 194, 194);
+    padding: 10px;
+    border-radius: 0px 7px 7px 0px;
+    background-color: black;
+    color: white;
+    border-right: none;
+
+}
+.slide-box-switch i{
+    transition: 0.5s;
+}
+.slide-box-switch .close{
+    transform: rotate(0deg);
+}
+.slide-box-switch .open{
+    transform: rotate(180deg);
+}
+
+.slide-box-switch:focus{
+    outline: none;
+}
+
+.slide-box{
+    width: 300px;
+    border:4px solid white;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 0px 4em 0;
+}
+.slide-box-title{
+    color: red;
+    font-size: 3em;
+}
+.slide-box-para{
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+}
+.call-btn{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.call-btn i{
+    margin-right: 10px;
+}
+.fb-btn{
+    background-color: rgb(4, 77, 129);
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+}
+@keyframes boxStartAni {
+    0%{
+        left: -260px;
+    }
+    30%{
+        left: -310px;
+    }
+    60%{
+        left: -270px;
+    }
+    75%{
+        left: -305px;
+    }
+    90%{
+        left: -290px;
+    }
+    100%{
+        left: -326px;
+    }
+}
+/* arrow trigger section end here!! */
+
+.gallery{
+    display: flex;
+    gap: 1em;
+    padding-top: 10px;
+    overflow-x: auto ;
+    padding: 4em 2em;
+}
+
+.gallery::-webkit-scrollbar{
+    width: 6;
+}
+
+.item{
+    display: flex;
+    min-width: 120px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery>div{
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.gallery{
+    display: flex;
+}
+img{
+    width: 100%;
+    transition:all.5s;
+}
+img:hover{
+    transform: scale(1.5) rotate(12deg);
+}
+
+.overlay {
+    position: absolute;
+    left: -120%;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(74, 72, 72, 0.5); /* Overlay background color */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: left 0.3s ease;
+    text-align:justify;
+   
+}
+
+.item:hover .overlay {
+    left: 0;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+.menu_table{
+    background-image: url(./foodmenu/sushi_bg.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+table{
+    background-color: rgba(220, 225, 228, 1); /* Fully opaque background color */
+    transition: background-color 3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+table:hover{
+    background-color: rgba(220, 225, 228, 0.6); /* Semi-transparent background color */
+}
+
+
+table {
+    width: 100%;
+    border-block-width: inherit;
+    margin-top: 8px;
+    border: 2px solid black;
+}
+
+tbody tr:hover{
+    background-color: #0f5e749a;
+    color: #ddd;
+}
+
+td{
+    padding: 6px;
+}
+
+th{
+    padding: 8px;
+    background-color: #02717d;
+    color: #fff; /* Set the text color for th elements */
+}
+.address-container {
+    background-color: rgba(169, 169, 169, 0.459);
+    border-radius: 10px;
+    overflow: hidden;
+  
+}
+.address {
+    padding: 30px;
+    text-align: center;
+    color: #050404;
+    transition: transform 0.8s ease-in-out;
+}
+  
+.address p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.contact_p{
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+  
+.address a {
+ color: #103257;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    display: inline;
+    color: #333;
+    font-style:inherit;
+    text-align: center;
+}
+
+.footer_sc {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}  
+
+footer{
+    background-color: rgb(128, 124, 120);
+}
