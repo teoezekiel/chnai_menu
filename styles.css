@@ -119,7 +119,8 @@ header {
     gap: 1em;
     padding-top: 10px;
     overflow-x: auto ;
-    padding: 4em 2em;
+    padding: 2em 2em;
+    background-color: rgb(245, 229, 208);
 }
 
 .gallery::-webkit-scrollbar{
@@ -187,12 +188,12 @@ img:hover{
 }
 
 table{
-    background-color: rgba(220, 225, 228, 1); /* Fully opaque background color */
+    background-color: rgb(249, 250, 250); /* Fully opaque background color */
     transition: background-color 3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 table:hover{
-    background-color: rgba(220, 225, 228, 0.6); /* Semi-transparent background color */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background color */
 }
 
 
@@ -215,50 +216,39 @@ td{
 th{
     padding: 8px;
     background-color: #02717d;
-    color: #fff; /* Set the text color for th elements */
+    color: #ffffff; /* Set the text color for th elements */
 }
-.address-container {
-    background-color: rgba(169, 169, 169, 0.459);
+
+.oh{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 0em 2em 0em 2em;
+    border-radius: 10px;
+}
+.address{
+    background-color: rgba(255, 255, 255, 0.459);
     border-radius: 10px;
     overflow: hidden;
-  
-}
-.address {
-    padding: 30px;
-    text-align: center;
-    color: #050404;
-    transition: transform 0.8s ease-in-out;
-}
-  
-.address p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.contact_p{
-    text-align: left;
-    padding: 0 0 0 20px;
-}
-  
-.address a {
- color: #103257;
- text-decoration: none;
- font-weight: bold;
-}
+    text-align: center; 
 
-.address a:hover {
-    text-decoration: underline;
 }
-
+    
+.address a{
+    color: #10419c;
+}
 section {
     margin-top: 20px;
 }
 
 h2 {
-    display: inline;
-    color: #333;
+    color: #a53e43;
     font-style:inherit;
     text-align: center;
+}
+
+.feedback{
+    text-align: center;
+    
 }
 
 .footer_sc {
