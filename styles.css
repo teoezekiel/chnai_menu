@@ -20,7 +20,7 @@ header {
     animation: boxStartAni 1s ease-in-out;
 }
 
-.slide-box-switch{
+/*.slide-box-switch{
     border:3px solid rgb(206, 194, 194);
     padding: 10px;
     border-radius: 0px 7px 7px 0px;
