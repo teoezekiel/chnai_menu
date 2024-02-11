@@ -5,6 +5,7 @@ body {
 
 header {
     text-align:center;
+    font-style: unset;
     padding: 10px;
     background-color: #dfdddd
 }
@@ -211,6 +212,7 @@ tbody tr:hover{
 
 td{
     padding: 6px;
+    text-align: center;
 }
 
 th{
@@ -219,25 +221,158 @@ th{
     color: #ffffff; /* Set the text color for th elements */
 }
 
-.oh{
-    background-color: rgb(255, 255, 255);
-    text-align: left;
-    padding: 0em 2em 0em 2em;
+.order{
+    text-align: center;
+    padding: 0 20% 0 20%;
+    text-align: center;
+}
+
+    /* Pop up for Ordering & Payment */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(39 37 14 / 84%); /* Semi-transparent black overlay */
+        justify-content: center;
+        align-items: center;
+        animation: fadeInOverlay  2.5s ease forwards;
+      }
+  
+      /* Styles for the popup box */
+      .popup {
+        background: #fff; /* White background */
+        padding: 20px;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        text-align: center;
+        animation: slideInPopup   2.5s ease forwards;
+      }
+  
+  @keyframes fadeInOverlay {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 10;
+      }
+  }
+  
+  @keyframes slideInPopup {
+      from{
+          transform: translateY(-50px);
+          opacity: 0;
+      }
+      to{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+      /* Close button style */
+      .close-btn {
+        cursor: pointer;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500; 
+        padding: 0px 4px;
+        float: right;
+        border: 1px solid #333;
+        border-radius: 20%;
+        transition: color 0.3s ease;
+        display: inline;
+        animation: rotateOutCloseBtn 0.5s ease forwards; /* Animation for close button */
+      }
+  
+      @keyframes fadeOutPopup {
+          from{
+              opacity: 10;
+          }
+          to{
+              opacity: 0;
+              transform: translateY(-50px);
+          } 
+      }
+  
+      @keyframes slideOutPopup {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+      }
+  
+      .close-btn:hover{
+          color: #ffffff;
+          background-color: #000000;
+      }
+  
+      
+      @keyframes rotateOutCloseBtn {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(180deg); /* Rotate by 180 degrees on click */
+        }
+      }
+
+
+
+.open-hour{
+    text-align: center;
+    padding: 0 1em;
+}
+
+.open-hour-section{
+    background-color: rgb(213, 209, 209, 0.459);
+    padding: 1em 1em;
     border-radius: 10px;
 }
-.address{
-    background-color: rgba(255, 255, 255, 0.459);
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center; 
+.contact-info{
+    text-align: center;
+    padding: 0 1em;
+}
 
+.contact-info-section{
+    background-color: rgb(213, 209, 209, 0.459);
+    padding: 1em 1em;
+    border-radius: 10px;
+    text-align: center;
 }
     
-.address a{
+.contact-info a{
     color: #10419c;
 }
 section {
     margin-top: 20px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    font-size: large;
+    background-color: #065f85;
+    color: white;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: 2s ease-in-out;
+}
+
+button:hover{
+ background-color: #fff;
+ color: #065f85;
+}
+
+.QRcode{
+    width: 80px;
+    height: 120px;
 }
 
 h2 {
