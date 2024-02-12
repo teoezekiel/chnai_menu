@@ -159,7 +159,7 @@ img:hover{
     transform: scale(1.5) rotate(12deg);
 }
 
-.overlay {
+.overlay_1 {
     position: absolute;
     left: -120%;
     bottom: 0;
@@ -172,7 +172,7 @@ img:hover{
    
 }
 
-.item:hover .overlay {
+.item:hover .overlay_1 {
     left: 0;
 }
 
@@ -228,7 +228,7 @@ th{
 }
 
     /* Pop up for Ordering & Payment */
-    .overlay {
+    .ovl {
         display: none;
         position: fixed;
         top: 0;
@@ -238,7 +238,7 @@ th{
         background: rgb(39 37 14 / 84%); /* Semi-transparent black overlay */
         justify-content: center;
         align-items: center;
-        animation: fadeInOverlay  2.5s ease forwards;
+        animation: fadeInOvl  2.5s ease forwards;
       }
   
       /* Styles for the popup box */
@@ -252,7 +252,7 @@ th{
         animation: slideInPopup   2.5s ease forwards;
       }
   
-  @keyframes fadeInOverlay {
+  @keyframes fadeInOvl {
       from{
           opacity: 0;
       }
