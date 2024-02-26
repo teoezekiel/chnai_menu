@@ -202,7 +202,7 @@ table {
     width: 100%;
     border-block-width: inherit;
     margin-top: 8px;
-    border: 1px solid black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 tbody tr:hover{
@@ -251,7 +251,7 @@ th{
         text-align: center;
         animation: slideInPopup   2.5s ease forwards;
       }
-  
+      
   @keyframes fadeInOvl {
       from{
           opacity: 0;
@@ -334,6 +334,7 @@ th{
     background-color: rgba(248, 248, 248, 0.459);
     padding: 1em 1em;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .contact-info{
     text-align: center;
@@ -345,6 +346,7 @@ th{
     padding: 1em 1em;
     border-radius: 10px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
     
 .contact-info a{
@@ -361,7 +363,7 @@ button{
     background-color: #1099d4;
     color: white;
     border-radius: 6px;
-    border: 1px solid rgb(8, 8, 8);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 2s ease-in-out;
 }
 
